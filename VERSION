@@ -1,0 +1,19 @@
+commit 3a5b2ed29dc82793fa3552fc143b30cfd321f4a7
+Author: Emmett Lalish <elalish@google.com>
+Date:   Fri Jan 29 12:08:23 2021 -0800
+
+    Fix variant normals (#1984)
+    
+    * update corresponding to three.js fix
+    
+    * updated three.js to r125
+    
+    * updated MV goldens
+    
+    * Revert "updated MV goldens"
+    
+    This reverts commit 699674756f69bd2cb6cae13a9b85fa3d74fc0296.
+    
+    * updated three.js to r125.2
+    
+    * skip two tests
