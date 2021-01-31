@@ -166,6 +166,7 @@ export class SmoothControls extends EventDispatcher {
       const {element} = this;
       element.addEventListener('mousemove', this.onPointerMove);
       element.addEventListener('mousedown', this.onPointerDown);
+      element.addEventListener('mouseenter', this.onPointerDown);
       if (!this._disableZoom) {
         element.addEventListener('wheel', this.onWheel);
       }
@@ -175,6 +176,7 @@ export class SmoothControls extends EventDispatcher {
       element.addEventListener('touchmove', this.onPointerMove);
 
       self.addEventListener('mouseup', this.onPointerUp);
+      self.addEventListener('mouseleave', this.onPointerUp);
       self.addEventListener('touchend', this.onPointerUp);
 
       this.element.style.cursor = 'grab';
